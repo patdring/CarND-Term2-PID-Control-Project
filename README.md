@@ -2,6 +2,40 @@
 Self-Driving Car Engineer Nanodegree Program
 
 ---
+## Intro
+
+Implementation of an PID controller in C++ to maneuver a vehicle around a given track.
+
+## Rubric Discussion Points
+
+The parameters are to be determined using the trial and error method. I expect a deeper understanding and "feeling" for the single components (P,I,D) and their influence. For this purpose each component was initialized with the same value and observed. Corresponding videos were recorded.
+
+#### *Effect of P "proportional" term*
+	- Only P term init. with 0.5 (others to 0.0).
+	- works fine for the first few meters than "oscillating" and the car leaves the track.
+	-> Parameter needs to be decreased.
+
+#### *Effect of D "differential" term*
+	- Only D term init. with 0.5 (others to 0.0).
+	- The car quickly starts spinning in circles and leaves the track.
+	-> Parameter needs to be decreased.
+
+#### *Effect of I "integral" term*
+	- Only I term init. with 0.5 (others to 0.0).
+	- The car is driving straight ahead and leaves the track.
+	-> Parameter needs to be decreased.
+
+#### *How the final parameters were choosen*
+	- The final parameters were chosen manually by trial and error
+	- After the first time the car drove the complete track without going out of it, parameters were changed to minimize the average cte
+	- The final parameters are: 0.2, 0.0, 3.
+
+#### *Videos*
+	- [Only P parameter](https://github.com/patdring/CarND-Term2-PID-Control-Project/blob/master/videos/PID_onlyP.ogv) 
+	- [Only D parameter](https://github.com/patdring/CarND-Term2-PID-Control-Project/blob/master/videos/PID_onlyD.ogv) 
+	- [Only I parameter](https://github.com/patdring/CarND-Term2-PID-Control-Project/blob/master/videos/PID_onlyI.ogv) 
+	- [Final parameters](https://github.com/patdring/CarND-Term2-PID-Control-Project/blob/master/videos/PID_final.ogv) [Final Parameters]()
+---
 
 ## Dependencies
 
