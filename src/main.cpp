@@ -35,7 +35,21 @@ int main()
   PID pid;
   
   // TODO: Initialize the pid variable.
-  pid.Init(0.1, 0.1, 0.1);
+  // Finding final parameters through trial an error
+  
+  // Only proportional terms, works fine for the first few meters than oscillating -> tune down!
+  //pid.Init(0.5, 0.0, 0.0);
+  // Only derivative terms, running in circles -> tune down!
+  //pid.Init(0.0, 0.5, 0.0);
+  // Only integral terms, leaving straight the street -> tune up!
+  //pid.Init(0.0, 0.0, 0.5);
+  
+  // fine tuning ...
+  //pid.Init(0.5, 0.1, 1);
+  //pid.Init(0.25, 0.1, 1.5);
+  //pid.Init(0.1, 0.0, 4); // Kd with less/no effect anymore. Adjustments of Kp and Ki have more influence!
+  //final parameters
+  pid.Init(0.2, 0.0, 3);
   
   h.onMessage([&pid](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode) {
     // "42" at the start of the message means there's a websocket message event.
