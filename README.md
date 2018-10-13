@@ -31,10 +31,11 @@ The parameters are to be determined using the trial and error method. I expect a
 	- The final parameters are: 0.2, 0.0, 3.
 
 #### *Videos*
-	- [Only P parameter](https://github.com/patdring/CarND-Term2-PID-Control-Project/blob/master/videos/PID_onlyP.ogv) 
-	- [Only D parameter](https://github.com/patdring/CarND-Term2-PID-Control-Project/blob/master/videos/PID_onlyD.ogv) 
-	- [Only I parameter](https://github.com/patdring/CarND-Term2-PID-Control-Project/blob/master/videos/PID_onlyI.ogv) 
-	- [Final parameters](https://github.com/patdring/CarND-Term2-PID-Control-Project/blob/master/videos/PID_final.ogv) [Final Parameters]()
+
+- [Only P parameter](https://github.com/patdring/CarND-Term2-PID-Control-Project/blob/master/videos/PID_onlyP.ogv) 
+- [Only D parameter](https://github.com/patdring/CarND-Term2-PID-Control-Project/blob/master/videos/PID_onlyD.ogv) 
+- [Only I parameter](https://github.com/patdring/CarND-Term2-PID-Control-Project/blob/master/videos/PID_onlyI.ogv) 
+- [Final parameters](https://github.com/patdring/CarND-Term2-PID-Control-Project/blob/master/videos/PID_final.ogv)
 ---
 
 ## Dependencies
